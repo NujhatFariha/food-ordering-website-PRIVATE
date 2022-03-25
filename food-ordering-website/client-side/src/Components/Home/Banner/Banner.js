@@ -1,10 +1,10 @@
 import React from 'react';
-import bg from '../../../images/bannerBg.png';
+import bg from '../../../images/Banner_BG.png';
 
 
 const bannerBg = {
     background: `url(${bg})`,
-    height: '110vh',
+    height: '100vh',
     backgroundRepeat: 'no-repeat',
     backgroundColor: 'rgba(124,0,0.0.1)',
     backgroundSize: 'cover',

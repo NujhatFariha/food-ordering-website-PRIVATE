@@ -38,6 +38,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/notification" element={<Notification />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/login" element={<Login />} />   
           <Route path="/register" element={<Register />} />   
           <Route path="/account" element={<Account />} />
           <Route path="/profile" element={<Profile />} />

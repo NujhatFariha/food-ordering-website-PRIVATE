@@ -7,19 +7,19 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
+// import Avatar from "@mui/material/Avatar";
+// import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ChatIcon from "@mui/icons-material/Chat";
 
-const settings = [
-  { name: "Profile", to: "/profile", current: false },
-  { name: "Account", to: "/account", current: false },
-  { name: "Dashboard", to: "/dashboard", current: false },
-];
+// const settings = [
+//   { name: "Profile", to: "/profile", current: false },
+//   { name: "Account", to: "/account", current: false },
+//   { name: "Dashboard", to: "/dashboard", current: false },
+// ];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

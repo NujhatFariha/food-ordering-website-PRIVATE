@@ -2,45 +2,42 @@ import React from 'react';
 // import { Container, Typography, TextField, Button, } from '@mui/material';
 // import { Grid } from '@mui/material';
 // import login from '../../images/bannerBg.png';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from "react-router-dom";
+
 
 
 const Login = () => {
     const theme = createTheme();
     return (
         <div>
-            <h1  sx={{ mt: 6}} >login</h1>
       
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 14,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+      
           }}
         >
-          <Avatar sx={{ m: 1}}>
-            <LockOutlinedIcon />
-          </Avatar>
+         
           <Typography component="h1" variant="h5">
-            Sign in
+            Login
           </Typography>
-          <Box component="form">
-            <TextField
+          <Box component="form" sx={{'width': '60%'}}>
+            <TextField 
               margin="normal"
               required
               fullWidth
@@ -68,20 +65,15 @@ const Login = () => {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2, 'backgroundColor': '#B06E6E ' }}
             >
               Sign In
             </Button>
-            <Grid container>
-              <Grid item xs>
+            
+              <Typography>
+                  "Don't have an account? <Link to = "/register"><span sx={{'textDecoration': 'none', }}> Sign Up</span></Link>"
+              </Typography>
 
-                  Forgot password?
-        
-              </Grid>
-              <Grid item>
-                  "Don't have an account? Sign Up"
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
